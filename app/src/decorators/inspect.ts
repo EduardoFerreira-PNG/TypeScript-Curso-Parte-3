@@ -1,5 +1,6 @@
-export function inspect(){
-    return function(
+
+                //decorators sem função pai, pois ele nao tinha parametrôs
+    export function inspect(
         target: any,
         propertyKey: string,
         descriptor: PropertyDescriptor
@@ -15,4 +16,3 @@ export function inspect(){
 
         return descriptor
     }
-}
